@@ -92,7 +92,21 @@ export default {
     }
   },
   created() {
-    this.helloWorld('luoxn28')
+    this.$http.get('/api/')
+      .then(res => {
+        // success callback
+        console.info(res)
+      })
+      .catch(res => {
+        console.info(res)
+      })
+
+    // 同时进行2个请求
+    this.$http.all([this.$http.get('/api/'), this.$http.get('/api/')])
+      .then((res1, res2) => {
+        console.info(res1)
+        console.info(res2)
+      })
   }
 }
 </script>

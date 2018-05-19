@@ -9,6 +9,9 @@ import './common/common.css'
 import globalJs from './common/common.js'
 Vue.use(globalJs)
 
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
