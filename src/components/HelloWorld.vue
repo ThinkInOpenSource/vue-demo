@@ -109,6 +109,8 @@ export default {
       })
 
     this.test()
+
+    console.info(this.$store.state.version)
   },
   methods: {
     // 同步请求方法

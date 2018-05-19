@@ -1,6 +1,10 @@
 # vue-demo
 vue-demo 实践
 
+- [Vue官方文档](https://cn.vuejs.org/v2/guide/)
+- [Vuex官方文档](https://vuex.vuejs.org/zh-cn/intro.html) - [vuex入门文](https://segmentfault.com/a/1190000009404727)
+- [element-ui](http://element-cn.eleme.io/#/zh-CN)
+
 #### 使用webpack构建vue项目
 
 ```

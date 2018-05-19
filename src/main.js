@@ -12,12 +12,16 @@ Vue.use(globalJs)
 import axios from 'axios'
 Vue.prototype.$http = axios
 
+// vuex
+import store from './store'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store, // 使用store
   components: { App },
   template: '<App/>'
 })
