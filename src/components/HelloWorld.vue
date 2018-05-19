@@ -103,10 +103,19 @@ export default {
 
     // 同时进行2个请求
     this.$http.all([this.$http.get('/api/'), this.$http.get('/api/')])
-      .then((res1, res2) => {
-        console.info(res1)
-        console.info(res2)
+      .then((res) => {
+        console.info(res[0])
+        console.info(res[1])
       })
+
+    this.test()
+  },
+  methods: {
+    // 同步请求方法
+    async test() {
+      let data = await this.$http.get('/api/hello');
+      console.info(data)
+    }
   }
 }
 </script>
